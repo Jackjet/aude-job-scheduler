@@ -41,7 +41,6 @@ public class NettyServer {
             //绑定端口,接受来的连接
             ChannelFuture channelFuture = serverBootstrap.bind(port).sync();
             logger.info("Started the service on port - {}", port);
-
             channelFuture.channel().closeFuture().sync();
         } catch (Exception e) {
             workerGroup.shutdownGracefully();
