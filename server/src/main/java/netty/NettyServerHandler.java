@@ -4,8 +4,8 @@ import entity.AudeRequest;
 import entity.ClassInfo;
 import io.netty.channel.ChannelHandlerAdapter;
 import io.netty.channel.ChannelHandlerContext;
-import io.netty.util.internal.StringUtil;
 import org.slf4j.LoggerFactory;
+import util.StringUtils;
 
 import java.util.Set;
 import java.util.concurrent.ExecutorService;
